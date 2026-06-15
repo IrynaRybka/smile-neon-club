@@ -18,6 +18,9 @@ title: {
     template: "%s | Smile Neon Club" 
   },
   description: "Найкращий VR-клуб в Обухові. Простір для дитячих днів народжень, ігрові симулятори та неон.",
+  verification: {
+    google: "XzspQdjk_xyYsAiCYV66nlnmXBrsCQh8-HmkqihijTU",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="ua"
+      lang="uk"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
