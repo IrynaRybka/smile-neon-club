@@ -3,7 +3,6 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://smile-neon-club.vercel.app/'; 
 
-  // Статичні сторінки вашого сайту
   return [
     {
       url: baseUrl,
@@ -24,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/contacts`, // сторінка контактів
+      url: `${baseUrl}/contacts`, 
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
