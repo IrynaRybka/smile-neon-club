@@ -64,7 +64,7 @@ export default function Formats() {
 
             {/* Кнопка Ціни */}
             <Link
-              href="/services"
+              href="/prices"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-8 py-3.5 font-bold text-white bg-gradient-to-r from-fuchsia-600 to-pink-600 shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:brightness-110 transition active:scale-98"
             >
               <Wallet size={18} />
