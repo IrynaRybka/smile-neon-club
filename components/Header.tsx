@@ -3,17 +3,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation"; 
 import { Menu, X } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Головна" },
   { href: "/prices", label: "Послуги та ціни" },
-  { href: "/services", label: "Поширені запитання" },
+  { href: "/services", label: "Поширені запитання" },   
   { href: "/contacts", label: "Контакти" },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname(); 
 
   return (
     <>
@@ -44,19 +46,28 @@ export default function Header() {
 
           {/* Desktop menu */}
           <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-white hover:text-cyan-400 transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
 
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-sm font-medium transition-colors relative py-1 ${
+                    isActive 
+                      ? "text-cyan-400 font-semibold" 
+                      : "text-white hover:text-cyan-400"
+                  }`}
+                >
+                  {item.label}
+                  {/* Красива лінія підкреслення для активного пункту на десктопі */}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-cyan-400 rounded-full" />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
-
-        
         </div>
       </header>
 
@@ -76,16 +87,24 @@ export default function Header() {
             </div>
 
             <nav className="flex flex-col p-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="py-4 text-white border-b border-white/10 hover:text-cyan-400 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`py-4 border-b border-white/10 transition-colors ${
+                      isActive 
+                        ? "text-cyan-400 font-bold bg-white/5 px-2 rounded-lg border-b-transparent" 
+                        : "text-white hover:text-cyan-400 px-2"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         </div>
