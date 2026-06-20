@@ -20,7 +20,7 @@ title: {
     template: "%s | Smile Neon Club" 
   },
   description: "Найкращий VR-клуб в Обухові. Простір для дитячих днів народжень, ігрові симулятори та неон.",
-   keywords: [
+  keywords: [
     "VR клуб Обухів",
     "дитячий день народження Обухів",
     "дитяче свято Обухів",
@@ -34,7 +34,13 @@ title: {
     "день народження Обухів",
     "VR Обухів",
     "організація свят Обухів",
+    "розваги на вихідні",
+    "розваги Обухів"
   ],
+    icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   verification: {
     google: "XzspQdjk_xyYsAiCYV66nlnmXBrsCQh8-HmkqihijTU",
   },
