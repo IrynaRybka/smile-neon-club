@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,6 +66,7 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        <GoogleTagManager gtmId="GTM-M3D7ZQ9J" />
       </body>
     </html>
   );
