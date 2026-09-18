@@ -19,7 +19,7 @@ export default function SpaceBooking() {
           </div>
           <div className="p-2">
             <span className="block text-2xl md:text-3xl font-black text-pink-500">3550 грн</span>
-            <span className="text-xs text-slate-400">3 години VIP </span>
+            <span className="text-xs text-slate-400">3 години вхід 15 дітей </span>
           </div>
         </div>
 
