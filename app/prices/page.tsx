@@ -1,3 +1,4 @@
+import BirthdayPackages from "@/components/prices/BirthdayPackages";
 import GameSection from "@/components/prices/GameSection";
 import HappyHours from "@/components/prices/HappyHours";
 import SpaceBooking from "@/components/prices/SpaceBooking";
@@ -17,6 +18,7 @@ export default function ServicesPage() {
         <HappyHours />
         <VRSpaceBooking />
         <SpaceBooking />
+        <BirthdayPackages />
         <SpaceList />
       </div>
     </div>

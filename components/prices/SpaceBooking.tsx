@@ -10,18 +10,16 @@ export default function SpaceBooking() {
         {/* Ціни */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-b border-white/10 pb-6 mb-6">
           <div className="p-2">
-            <span className="block text-2xl md:text-3xl font-black text-pink-500">1400 грн</span>
-            <span className="text-xs text-slate-400">1 година (з 18.09.2026 1600 грн)</span>
+            <span className="block text-2xl md:text-3xl font-black text-pink-500">1600 грн</span>
+            <span className="text-xs text-slate-400">1 година </span>
           </div>
           <div className="p-2 border-y border-white/5 md:border-y-0 md:border-x md:border-white/10">
-            <span className="block text-2xl md:text-3xl font-black text-pink-500">2420 грн</span>
-            <span className="text-xs text-slate-400">3 години (з 18.09.2026 2850 грн)</span>
+            <span className="block text-2xl md:text-3xl font-black text-pink-500">2850 грн</span>
+            <span className="text-xs text-slate-400">3 години </span>
           </div>
           <div className="p-2">
-            <span className="block text-2xl md:text-3xl font-black text-pink-500">3350 грн</span>
-            <span className="text-xs text-slate-400">3 години VIP (вхід на 15 дітей)</span>
-            <br />
-            <span className="text-xs text-slate-400">з 18.09.2026 3550 грн</span>
+            <span className="block text-2xl md:text-3xl font-black text-pink-500">3550 грн</span>
+            <span className="text-xs text-slate-400">3 години VIP </span>
           </div>
         </div>
 
