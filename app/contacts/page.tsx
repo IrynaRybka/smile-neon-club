@@ -34,7 +34,7 @@ export default function ContactsPage() {
                 <div>
                   <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Ми знаходимось за адресою:</h3>
                   <p className="text-sm md:text-base text-slate-200 mt-0.5">
-                    Київська область, м. Обухів, мікрорайон Сосновий 2, оф. 30/1 (-1 поверх)
+                    Київська область, м. Обухів, мікрорайон Сосновий 2, оф. 30/1 (-1 поверх, підземний поверх — безпечна локація під час тривог)
                   </p>
                 </div>
               </div>
